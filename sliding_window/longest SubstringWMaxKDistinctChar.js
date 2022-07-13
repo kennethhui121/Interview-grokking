@@ -40,6 +40,7 @@ function non_repeat_substring(str) {
         console.log(rightChar);
         // this is tricky; in the current window, we will not have any 'rightChar' after its previous index
         // and if 'windowStart' is already ahead of the last index of 'rightChar', we'll keep 'windowStart'
+        console.log(charIndexMap[rightChar])
         windowStart = Math.max(windowStart, charIndexMap[rightChar] + 1);
         console.log(windowStart)
       }
